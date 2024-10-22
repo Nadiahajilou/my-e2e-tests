@@ -11,10 +11,10 @@ describe("Signup Page Tests", () => {
     cy.get("#password").type("password123");
     cy.get("#password-confirm").type("password123");
 
-    // کلیک روی دکمه ثبت‌نام
+    
     cy.get('button[type="submit"]').click();
 
-    // انتظار برای مشاهده پیام موفقیت یا هدایت به صفحه ورود
+ 
     cy.url().should("include", "/login");
   });
 });
